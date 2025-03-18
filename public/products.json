@@ -1,0 +1,112 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://i.ibb.co.com/Ldyx82g1/Galaxy-S23-Ultra-Cream-1280.jpg",
+    "category": "Phones",
+    "price": 1199,
+    "description": "Samsung's flagship phone with S-Pen and 200MP camera.",
+    "Specification": ["Snapdragon 8 Gen 2", "256GB Storage", "6.8-inch AMOLED display", "200MP Camera"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 2,
+    "product_title": "Dell XPS 15",
+    "product_image": "https://i.ibb.co.com/yF4T4pYL/XPS-15-9520-2022-1.jpg",
+    "category": "Laptops",
+    "price": 1299,
+    "description": "A powerful laptop with a stunning 4K display and high-end performance.",
+    "Specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "15.6-inch 4K display"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 3,
+    "product_title": "MacBook Pro 14",
+    "product_image": "https://i.ibb.co.com/Vcbh37W7/Macbook-Pro-M1-Chip-3-1.png",
+    "category": "Laptops",
+    "price": 1999,
+    "description": "Apple's MacBook Pro with the powerful M2 chip and Retina display.",
+    "Specification": ["Apple M2 Chip", "16GB RAM", "512GB SSD", "14-inch Retina display"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 4,
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://i.ibb.co.com/Sw13Gp82/i-Phone-14-Pro-Deep-Purple-7300.jpg",
+    "category": "Phones",
+    "price": 1099,
+    "description": "Apple's latest smartphone with a 48MP camera and Dynamic Island.",
+    "Specification": ["A16 Bionic Chip", "128GB Storage", "6.1-inch OLED display", "48MP Camera"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 5,
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://i.ibb.co.com/RkMZfjVj/Think-Pad-X1-Carbon-in-BD-5.jpg",
+    "category": "Laptops",
+    "price": 1399,
+    "description": "A business-class laptop with great durability and performance.",
+    "Specification": ["Intel Core i7", "16GB RAM", "1TB SSD", "14-inch Full HD display"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 6,
+    "product_title": "AirPods Pro 2",
+    "product_image": "https://i.ibb.co.com/BKPWVnwr/Air-Pods-Pro-2nd-generation-USB-C-a-6909.jpg",
+    "category": "Accessories",
+    "price": 249,
+    "description": "Apple's premium wireless earbuds with Active Noise Cancellation.",
+    "Specification": ["ANC", "Transparency Mode", "MagSafe Charging", "Spatial Audio"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 7,
+    "product_title": "ASUS ROG Strix G15",
+    "product_image": "https://i.ibb.co.com/bM24mt2w/00013-ASUS-ROG-Strix-2.jpg",
+    "category": "Laptops",
+    "price": 1499,
+    "description": "A gaming laptop with high refresh rate display and powerful graphics.",
+    "Specification": ["AMD Ryzen 9", "32GB RAM", "1TB SSD", "15.6-inch 300Hz Display"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 8,
+    "product_title": "Acer Swift 3",
+    "product_image": "https://i.ibb.co.com/0VvZw1tH/Acer-Swift-3-11.jpg",
+    "category": "Laptops",
+    "price": 899,
+    "description": "A budget-friendly ultrabook with good battery life.",
+    "Specification": ["Intel Core i5", "8GB RAM", "512GB SSD", "14-inch Full HD Display"],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": 9,
+    "product_title": "HP Spectre x360",
+    "product_image": "https://i.ibb.co.com/rGJjbwrn/Hp-7-5.jpg",
+    "category": "Laptops",
+    "price": 1199,
+    "description": "A 2-in-1 convertible laptop with a sleek design and excellent performance.",
+    "Specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "13.3-inch Touchscreen"],
+    "availability": false,
+    "rating": 4.7
+  },
+  {
+    "product_id": 10,
+    "product_title": "Samsung Galaxy Buds 2 Pro",
+    "product_image": "https://i.ibb.co.com/KcNxpn7m/Galaxy-Buds2-Pro-Black-a-8974-6051.jpg",
+    "category": "Accessories",
+    "price": 199,
+    "description": "Samsung's high-quality wireless earbuds with immersive audio.",
+    "Specification": ["Hi-Fi Sound", "ANC", "Wireless Charging", "Bluetooth 5.3"],
+    "availability": true,
+    "rating": 4.6
+  }
+]

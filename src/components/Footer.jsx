@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer className="footer bg-base-200 text-base-content p-10">
+    <footer className="mt-20 footer bg-base-200 text-base-content p-10">
       <div className="w-fit mx-auto flex flex-col items-center">
         <h2 className="font-bold text-3xl">Gadget Heaven</h2>
         <p className="text-center font-medium text-[#6c6b6f]">Leading the way in cutting-edge technology and innovation</p>

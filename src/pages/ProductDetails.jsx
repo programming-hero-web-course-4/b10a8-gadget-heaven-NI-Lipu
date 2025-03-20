@@ -42,7 +42,7 @@ const ProductDetails = () => {
  
     addToCard(product)
     setData(getAllData())
-    console.log(getAllData().length);
+    // console.log(getAllData().length);
 
     // Disable Add to Cart Button
     setIsCart(true);

@@ -21,7 +21,7 @@ const Cards = () => {
   const [isPurchase, setIsPurchase] = useState(false)
   const {pathname} = useLocation()
   const {wishlist, setWishlist} = useContext(WishlistContext)
-  console.log(wishlist)
+  // console.log(wishlist)
  
   
   

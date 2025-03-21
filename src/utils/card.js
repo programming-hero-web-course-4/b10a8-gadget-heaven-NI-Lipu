@@ -30,4 +30,14 @@ const removeFromCart = id =>{
   toast.success('Successfully remove!');
 }
 
-export { addToCard, getAllData, removeFromCart }
+// Remove AllData From Local Storage
+const removeAllData =()=>{
+  const removeData = getAllData()
+  if(removeData){
+    localStorage.removeItem('card');
+  }
+  
+  // console.log(removeData)
+}
+
+export { addToCard, getAllData, removeFromCart, removeAllData}

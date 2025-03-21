@@ -23,7 +23,15 @@ const decreaseMoney = (money) =>{
   localStorage.setItem('money', JSON.stringify(totalMoney));
 }
 
+// Remove all money
+const removeTotalMoney = ()=>{
+  const totalMoney = getTotalMoney()
+  if(totalMoney){
+    localStorage.removeItem('money')
+  }
+}
 
-export {setTotalMoney, getTotalMoney, decreaseMoney};
+
+export {setTotalMoney, getTotalMoney, decreaseMoney, removeTotalMoney};
 
 

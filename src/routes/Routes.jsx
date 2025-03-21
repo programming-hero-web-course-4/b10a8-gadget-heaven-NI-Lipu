@@ -8,6 +8,8 @@ import AllProducts from "../components/AllProducts";
 import Products from "../components/Products";
 import ProductDetails from "../pages/ProductDetails";
 import Cards from "../components/Cards";
+// import Wishlist from "../components/Wishlist";
+// import Card from "../components/Card";
 
 const routes = createBrowserRouter([
 {
@@ -40,9 +42,13 @@ const routes = createBrowserRouter([
       element: <Dashboard></Dashboard>,
       children:[
         {
-          path: '/dashboard',
+          index: true,
           element: <Cards></Cards>
         },
+        {
+          path: 'wishlist',
+          element: <Cards></Cards>
+        }
       ]
     },
     {

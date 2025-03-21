@@ -2,13 +2,14 @@ import { TiShoppingCart } from "react-icons/ti";
 import { FaRegHeart } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 import { useContext } from "react";
-import { CartContext } from "../utils/cardContext";
+import { CartContext, WishlistContext } from "../utils/cardContext";
 // import { getAllData } from "../utils/card";
 // import { useState } from "react";
 
 const Navbar = () => {
   const {pathname} = useLocation()
   const {data} = useContext(CartContext)
+  const {wishlist} = useContext(WishlistContext)
   // const data = getAllData()
   // const [countCart, setCountCart] = useState(data);
   // console.log(pathname)
@@ -70,7 +71,7 @@ const Navbar = () => {
     <button className="btn btn-circle">
       <div className="indicator">
       <FaRegHeart size={20} />
-        <span className="text-red-600 indicator-item">0</span>
+        <span className="text-red-600 indicator-item">{wishlist.length}</span>
       </div>
     </button>
   </div>

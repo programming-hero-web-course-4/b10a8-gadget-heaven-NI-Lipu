@@ -6,12 +6,12 @@ import { GrCart } from "react-icons/gr";
 import { FaRegHeart } from "react-icons/fa6";
 
 
-const Banner = ({product, handleCard, isCart}) => {
+const Banner = ({product, handleCard, isCart, handleWishlist, isWishlist}) => {
   const navigate = useNavigate()
   const {pathname} = useLocation()
 
   
-  const {product_id, product_title, product_image, category, price, description, Specification, availability, rating} = product || {};
+  const {product_id, product_title, product_image, price, description, Specification, availability, rating} = product || {};
   return (
     <div className="relative w-11/12 lg:w-10/12 rounded-b-xl mx-auto bg-[#9538e2] pt-5">
       {pathname == `/product/${product_id}` ? (
@@ -82,7 +82,7 @@ const Banner = ({product, handleCard, isCart}) => {
 
               <div className="flex items-center gap-3">
                 <button disabled={isCart} onClick={()=>handleCard(product)} className="btn bg-[#8b35d2] rounded-3xl text-white text-lg">Add To Card <GrCart className="ml-1" size={'19'} /></button>
-                <button className="btn rounded-full border-2"><FaRegHeart size={'25'} /></button>
+                <button disabled={isWishlist} onClick={()=>handleWishlist(product)} className="btn rounded-full border-2"><FaRegHeart size={'25'} /></button>
               </div>
             </div>
           </div>

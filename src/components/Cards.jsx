@@ -22,7 +22,12 @@ const Cards = () => {
   const {pathname} = useLocation()
   const {wishlist, setWishlist} = useContext(WishlistContext)
   // console.log(wishlist)
- 
+  useEffect(() => {
+   
+      document.title= 'fff | Gadget Heaven'
+   
+   
+  }, [])
   
   
 
@@ -90,26 +95,29 @@ const Cards = () => {
         <div className="flex items-center justify-between mb-5">
           <h3 className="font-bold text-xl">Cart</h3>
           <div className="flex items-center">
-            <p className="font-bold text-xl">
+           <div className="text-center md:flex md:items-center">
+           <p className="font-bold text-xl">
               Total cost: <span>${money}</span>
             </p>
   
             <button
               onClick={() => handleSort('price')}
-              className="font-semibold text-lg flex items-center mx-3 gap-1 text-[#9538e2] py-1 px-3 border-2 border-[#9538e2] rounded-3xl"
+              className="my-2 md:my-2 font-semibold text-lg flex items-center md:mx-3 gap-1 text-[#9538e2] py-1 px-3 border-2 border-[#9538e2] rounded-3xl"
             >
               <span>Sort by Price</span> <PiSortDescendingBold size={'20'} />
             </button>
-  
             <button
               disabled={isPurchase}
               onClick={handlePurchase}
-              className={`font-medium text-lg text-white py-1 px-3 rounded-3xl bg-[#9538e2] ${
+              className={`w-full md:w-fit font-medium text-lg text-white py-2 md:py-1 px-3 rounded-3xl bg-[#9538e2] ${
                 isPurchase ? 'opacity-30 cursor-not-allowed' : ''
               }`}
             >
               Purchase
             </button>
+           </div>
+  
+            
   
             {/* Modal */}
             <dialog ref={modalRef} className="modal">
@@ -136,7 +144,7 @@ const Cards = () => {
           </div>
         </div>
   
-        {/* Render Cart Items */}
+        
         {remainData.length > 0 ? (
           remainData.map((item) => (
             <Card

@@ -1,9 +1,15 @@
 import { useLoaderData } from "react-router-dom";
 import SingleProduct from "./SingleProduct";
 import Heading2 from "./Heading2";
+import { useEffect } from "react";
 
 
 const AllProducts = () => {
+
+   // Dynamic Title
+    useEffect(() => {
+      document.title= 'All-Products | Gadget Heaven'
+    }, [])
   
   // console.log(pathname)
   const data = useLoaderData()

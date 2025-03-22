@@ -4,14 +4,27 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { FcRating } from "react-icons/fc";
 import { GrCart } from "react-icons/gr";
 import { FaRegHeart } from "react-icons/fa6";
+// import { useContext, useEffect } from "react";
+import { IdContext, PathnameContext } from "../utils/cardContext";
 
 
 const Banner = ({product, handleCard, isCart, handleWishlist, isWishlist}) => {
   const navigate = useNavigate()
   const {pathname} = useLocation()
+  // const {setPath} = useContext(PathnameContext);
+  // const {setId} = useContext(IdContext);
 
   
+// console.log(path);
+  
   const {product_id, product_title, product_image, price, description, Specification, availability, rating} = product || {};
+
+  // useEffect(() => {
+  //   if (product_id) {  
+  //     setPath(`/product/${product_id}`);
+  //     setId(product_id)
+  //   }
+  // }, [product_id, setPath, setId]); 
   return (
     <div className="relative w-11/12 lg:w-10/12 rounded-b-xl mx-auto bg-[#9538e2] pt-5">
       {pathname == `/product/${product_id}` ? (

@@ -1,8 +1,10 @@
+
 import { NavLink } from "react-router-dom";
 
 
 const Categories = ({categories}) => {
-  // console.log(categories)
+   // Dynamic Title
+  
   return (
     <div className="flex flex-col bg-slate-400 rounded-lg gap-y-4 px-3 py-6">
       

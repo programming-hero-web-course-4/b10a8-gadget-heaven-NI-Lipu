@@ -46,6 +46,11 @@ const ProductDetails = () => {
 
   }, [data, id, setData, setMoney, setWishlist])
 
+   // Dynamic Title
+   useEffect(() => {
+    document.title= 'Details | Gadget Heaven'
+  }, [])
+
 
   // Handle CART BUTTON
   const handleCard=(product)=>{

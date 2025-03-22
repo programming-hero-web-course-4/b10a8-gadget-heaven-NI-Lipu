@@ -1,7 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Heading2 from "../components/Heading2";
+import { useEffect } from "react";
 
 const Dashboard = () => {
+   // Dynamic Title
+    useEffect(() => {
+      document.title= 'Dashboard | Gadget Heaven'
+    }, [])
   return (
    <>
     <div>

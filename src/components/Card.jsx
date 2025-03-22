@@ -1,11 +1,11 @@
+
 import { IoTrashBinSharp } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
 
 
 const Card = ({item, handleRemoveFromCart, handleRemoveFromWishlist}) => {
   const {product_id, product_title, product_image, category, price, description, Specification, availability, rating} = item || {};
-  // console.log(item)
-
+ 
   const {pathname} = useLocation()
   
   return (

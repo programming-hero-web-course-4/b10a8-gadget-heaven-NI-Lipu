@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import ApexChart from "../components/ApexChart";
 import Heading2 from "../components/Heading2";
 
 
 const Statistics = () => {
+   // Dynamic Title
+    useEffect(() => {
+      document.title= 'Statistics | Gadget Heaven'
+    }, [])
   return (
     <div>
       <Heading2
